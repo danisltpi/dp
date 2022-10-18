@@ -1,0 +1,28 @@
+<!ELEMENT Rechnungen (Rechnung+)>
+<!ELEMENT Rechnung (Leistungsempfaenger,Steuernummer,Austellungsdatum,Rechnungsnummer,Positionen,Entgelt)>
+<!ELEMENT Leistungsempfaenger (Name,Anschrift)>
+<!ELEMENT Name (#PCDATA)>
+<!ELEMENT Anschrift (Strasse,PLZ,Ort,Telefon,Fax,Email)>
+<!ELEMENT Strasse (#PCDATA)>
+<!ELEMENT PLZ (#PCDATA)>
+<!ELEMENT Ort (#PCDATA)>
+<!ELEMENT Telefon (#PCDATA)>
+<!ELEMENT Fax (#PCDATA)>
+<!ELEMENT Email (#PCDATA)>
+<!ELEMENT Steuernummer (#PCDATA)>
+<!ELEMENT Austellungsdatum (#PCDATA)>
+<!ELEMENT Rechnungsnummer (#PCDATA)>
+<!ELEMENT Positionen (Leistung+)> 
+<!ELEMENT Leistung (Nummer,Art,Preis)>
+<!ELEMENT Nummer (#PCDATA)>
+<!ELEMENT Art (#PCDATA)>
+<!ATTLIST Art Menge CDATA #REQUIRED>
+<!ELEMENT Preis (Waehrung,Einzel,Gesamt,MwSt)>
+<!ELEMENT Waehrung (#PCDATA)>
+<!ELEMENT Einzel (#PCDATA)>
+<!ELEMENT Gesamt (#PCDATA)>
+<!ELEMENT MwSt (#PCDATA)>
+<!ELEMENT Entgelt (Waehrung,Brutto,Netto,MwSt)>
+<!ELEMENT Brutto (#PCDATA)>
+<!ELEMENT Netto (#PCDATA)>
+

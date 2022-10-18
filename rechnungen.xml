@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE Rechnungen SYSTEM "rechnungen.dtd">
+<Rechnungen>
+	<Rechnung>
+		<Leistungsempfaenger>
+			<Name>Kleintier Meier GmbH</Name>
+			<Anschrift>
+				<Strasse>Meierring 3</Strasse>
+				<PLZ>81828</PLZ>
+				<Ort>Machthausen</Ort>
+				<Telefon>0777/987987</Telefon>
+				<Fax>0777/987987</Fax>
+				<Email>klein.meier@tiere.de</Email>
+			</Anschrift>
+		</Leistungsempfaenger>
+		<Steuernummer>88 123/8282 2</Steuernummer>
+		<Austellungsdatum>2017-1-15</Austellungsdatum>
+		<Rechnungsnummer>657321</Rechnungsnummer>
+		<Positionen>
+			<Leistung>
+				<Nummer>1</Nummer>
+				<Art Menge="100">Antike Holzwuermer</Art>
+				<Preis>
+					<Waehrung>Euro</Waehrung>
+					<Einzel>1.50</Einzel>
+					<Gesamt>150</Gesamt>
+					<MwSt>19</MwSt>
+				</Preis>
+			</Leistung>
+			<Leistung>
+				<Nummer>2</Nummer>
+				<Art Menge="1">Holzwurmfutter</Art>
+				<Preis>
+					<Waehrung>Euro</Waehrung>
+					<Einzel>34.45</Einzel>
+					<Gesamt>34.45</Gesamt>
+					<MwSt>19</MwSt>
+				</Preis>
+			</Leistung>
+			<Leistung>
+				<Nummer>3</Nummer>
+				<Art Menge="1">Steinlaus</Art>
+				<Preis>
+					<Waehrung>Euro</Waehrung>
+					<Einzel>777.77</Einzel>
+					<Gesamt>777.77</Gesamt>
+					<MwSt>19</MwSt>
+				</Preis>
+			</Leistung>
+		</Positionen>
+		<Entgelt>
+			<Waehrung>Euro</Waehrung>
+			<Brutto>962.22</Brutto>
+			<Netto>808.59</Netto>
+			<MwSt>153.63</MwSt>
+		</Entgelt>
+	</Rechnung>
+	<Rechnung>
+		<Leistungsempfaenger>
+			<Name>Dr. med. Cyprian Zottel</Name>
+			<Anschrift>
+				<Strasse>Soddelstrudel 5a</Strasse>
+				<PLZ>13023</PLZ>
+				<Ort>Zotenheim</Ort>
+				<Telefon></Telefon>
+				<Fax></Fax>
+				<Email></Email>
+			</Anschrift>
+		</Leistungsempfaenger>
+		<Steuernummer>DE333666999</Steuernummer>
+		<Austellungsdatum>2017-8-8</Austellungsdatum>
+		<Rechnungsnummer>98-798-7987</Rechnungsnummer>
+		<Positionen>
+			<Leistung>
+				<Nummer>1</Nummer>
+				<Art Menge="3">Grippemittel "Tumifla"</Art>
+				<Preis>
+					<Waehrung>Euro</Waehrung>
+					<Einzel>120</Einzel>
+					<Gesamt>360</Gesamt>
+					<MwSt>19</MwSt>
+				</Preis>
+			</Leistung>
+			<Leistung>
+				<Nummer>2</Nummer>
+				<!-- in liter -->
+				<Art Menge="2">Abfuehrmittel "Wech damit"</Art>
+				<Preis>
+					<Waehrung>Euro</Waehrung>
+					<Einzel>99.99</Einzel>
+					<Gesamt>199.98</Gesamt>
+					<MwSt>19</MwSt>
+				</Preis>
+			</Leistung>
+			<Leistung>
+				<Nummer>3</Nummer>
+				<Art Menge="2">Energieriegel "Satto"</Art>
+				<Preis>
+					<Waehrung>Euro</Waehrung>
+					<Einzel>5.98</Einzel>
+					<Gesamt>11.96</Gesamt>
+					<MwSt>7</MwSt>
+				</Preis>
+			</Leistung>
+			<Leistung>
+				<Nummer>4</Nummer>
+				<Art Menge="">Beratung pauschal</Art>
+				<Preis>
+					<Waehrung>Euro</Waehrung>
+					<Einzel></Einzel>
+					<Gesamt>50</Gesamt>
+					<MwSt>19</MwSt>
+				</Preis>
+			</Leistung>
+		</Positionen>
+		<Entgelt>
+			<Waehrung>Euro</Waehrung>
+			<Brutto>621.94</Brutto>
+			<Netto>490.22</Netto>
+			<MwSt>116.74</MwSt>
+		</Entgelt>
+	</Rechnung>
+</Rechnungen>
