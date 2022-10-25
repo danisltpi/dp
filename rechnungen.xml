@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE Rechnungen SYSTEM "rechnungen.dtd">
-<Rechnungen>
+<Rechnungen
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="rechnungen rechnungen.xsd">
 	<Rechnung>
 		<Leistungsempfaenger>
 			<Name>Kleintier Meier GmbH</Name>
@@ -54,6 +55,10 @@
 			<Netto>808.59</Netto>
 			<MwSt>153.63</MwSt>
 		</Entgelt>
+		<Zahlungsmoeglichkeiten>
+			<BLZ>66050101</BLZ>
+			<Kontonr>987654321</Kontonr>
+		</Zahlungsmoeglichkeiten>
 	</Rechnung>
 	<Rechnung>
 		<Leistungsempfaenger>
@@ -116,5 +121,69 @@
 			<Netto>490.22</Netto>
 			<MwSt>116.74</MwSt>
 		</Entgelt>
+		<Zahlungsmoeglichkeiten>
+			<IBAN>DE1868370034099966633</IBAN>
+			<BIC>DEUTDE6F683</BIC>
+		</Zahlungsmoeglichkeiten>
+	</Rechnung>
+	<Rechnung>
+		<Leistungsempfaenger>
+			<Name>Familie Urmel</Name>
+			<Anschrift>
+				<Strasse>Ulturenstrasse 764</Strasse>
+				<PLZ>43210</PLZ>
+				<Ort>Ultursingen</Ort>
+			</Anschrift>
+		</Leistungsempfaenger>
+		<Steuernummer>DE987654321</Steuernummer>
+		<Austellungsdatum>2017-10-19</Austellungsdatum>
+		<Rechnungsnummer>89321311</Rechnungsnummer>
+		<Positionen>
+			<Leistung>
+				<Nummer>1</Nummer>
+				<Art Menge="1">Urne, Eiche massive</Art>
+				<Preis>
+					<Waehrung>Euro</Waehrung>
+					<Gesamt>299.99</Gesamt>
+				</Preis>
+			</Leistung>
+			<Leistung>
+				<Nummer>2</Nummer>
+				<Art Menge="1">Ueberfuehrung Krematorium Feuerbach inkl. Begleitpersonal</Art>
+				<Preis>
+					<Waehrung>Euro</Waehrung>
+					<Gesamt>349.00</Gesamt>
+				</Preis>
+			</Leistung>
+			<Leistung>
+				<Nummer>3</Nummer>
+				<Art Menge="1">Dekoration</Art>
+				<Preis>
+					<Waehrung>Euro</Waehrung>
+					<Gesamt>149.50</Gesamt>
+				</Preis>
+			</Leistung>
+			<Leistung>
+				<Nummer>4</Nummer>
+				<Art Menge="40">Trauerkarten inkl. Briefmarken</Art>
+				<Preis>
+					<Waehrung>Euro</Waehrung>
+					<Einzel>2.00</Einzel>
+					<Gesamt>90.50</Gesamt>
+				</Preis>
+			</Leistung>
+		</Positionen>
+		<Entgelt>
+			<Waehrung>Euro</Waehrung>
+			<Netto>878.49</Netto>
+			<Brutto>738.23</Brutto>
+			<MwSt>140.26</MwSt>
+		</Entgelt>
+		<Zahlungsmoeglichkeiten>
+			<IBAN></IBAN>
+			<BIC></BIC>
+			<Kontonr></Kontonr>
+			<Bitcoin></Bitcoin>
+		</Zahlungsmoeglichkeiten>
 	</Rechnung>
 </Rechnungen>
