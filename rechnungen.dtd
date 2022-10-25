@@ -2,7 +2,7 @@
 <!ELEMENT Rechnung (Leistungsempfaenger,Steuernummer,Austellungsdatum,Rechnungsnummer,Positionen,Entgelt)>
 <!ELEMENT Leistungsempfaenger (Name,Anschrift)>
 <!ELEMENT Name (#PCDATA)>
-<!ELEMENT Anschrift (Strasse,PLZ,Ort,Telefon,Fax,Email)>
+<!ELEMENT Anschrift (Strasse,PLZ,Ort,Telefon?,Fax?,Email?)>
 <!ELEMENT Strasse (#PCDATA)>
 <!ELEMENT PLZ (#PCDATA)>
 <!ELEMENT Ort (#PCDATA)>
