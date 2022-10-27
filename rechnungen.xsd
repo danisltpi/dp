@@ -1,4 +1,18 @@
-<?xml version="1.0"?>
-<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
-  targetNamespace="rechnungen"
-  xmlns="rechnungen"></xs:schema>
+<xs:schema targetNamespace="rechnungen" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns="rechnungen">
+  <xs:element name="Rechnungen">
+    <xs:complexType>
+      <xs:choice maxOccurs="unbounded" minOccurs="1">
+        <xs:element name="Rechnung" type="RechnungType"></xs:element>
+        <xs:element name="Rechnung" type="RechnungType"></xs:element>
+        <xs:element name="Rechnung" type="RechnungType"></xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:complexType name="RechnungType">
+    <xs:all>
+      <xs:element name="Leistungsempfaenger" type="LeistungsempfaengerType"></xs:element>
+    </xs:all>
+  </xs:complexType>
+  <xs:complexType name="LeistungsempfaengerType"></xs:complexType>
+</xs:schema>
