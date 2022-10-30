@@ -1,18 +1,100 @@
-<xs:schema targetNamespace="rechnungen" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns="rechnungen">
+<xs:schema
+  xmlns:xs="http://www.w3.org/2001/XMLSchema"
+  xmlns="rechnungen"
+  targetNamespace="rechnungen"
+  elementFormDefault="qualified"
+>
   <xs:element name="Rechnungen">
     <xs:complexType>
       <xs:choice maxOccurs="unbounded" minOccurs="1">
-        <xs:element name="Rechnung" type="RechnungType"></xs:element>
-        <xs:element name="Rechnung" type="RechnungType"></xs:element>
         <xs:element name="Rechnung" type="RechnungType"></xs:element>
       </xs:choice>
     </xs:complexType>
   </xs:element>
 
   <xs:complexType name="RechnungType">
-    <xs:all>
+    <xs:sequence>
       <xs:element name="Leistungsempfaenger" type="LeistungsempfaengerType"></xs:element>
+      <xs:element name="Steuernummer" type="xs:string"></xs:element>
+      <xs:element name="Austellungsdatum" type="xs:date"></xs:element>
+      <xs:element name="Rechnungsnummer" type="xs:string"></xs:element>
+      <xs:element name="Positionen" type="PositionenType"></xs:element>
+      <xs:element name="Entgelt" type="EntgeltType"></xs:element>
+      <xs:element name="Zahlungsmoeglichkeiten" type="ZahlungsmoeglichkeitenType"></xs:element>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="LeistungsempfaengerType">
+    <xs:sequence>
+      <xs:element name="Name" type="xs:string"></xs:element>
+      <xs:element name="Anschrift" type="AnschriftType"></xs:element>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="ZahlungsmoeglichkeitenType">
+    <xs:all>
+      <xs:element name="IBAN" type="xs:string" minOccurs="0"></xs:element>
+      <xs:element name="BIC" type="xs:string" minOccurs="0"></xs:element>
+      <xs:element name="Kontonr" type="xs:string" minOccurs="0"></xs:element>
+      <xs:element name="Bitcoin" type="xs:string" minOccurs="0"></xs:element>
+      <xs:element name="BLZ" type="xs:string" minOccurs="0"></xs:element>
     </xs:all>
   </xs:complexType>
-  <xs:complexType name="LeistungsempfaengerType"></xs:complexType>
+
+  <xs:complexType name="AnschriftType">
+    <xs:sequence>
+      <xs:element name="Strasse" type="xs:string"></xs:element>
+      <xs:element name="PLZ" type="xs:string"></xs:element>
+      <xs:element name="Ort" type="xs:string"></xs:element>
+      <xs:element name="Telefon" type="NummerType" minOccurs="0"></xs:element>
+      <xs:element name="Fax" type="NummerType" minOccurs="0"></xs:element>
+      <xs:element name="Email" type="xs:string" minOccurs="0"></xs:element>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:simpleType name="NummerType">
+    <xs:restriction base="xs:string">
+      <xs:pattern value="0[0-9]{3,5}\/[0-9]{5,}"></xs:pattern>
+    </xs:restriction>
+  </xs:simpleType>
+
+  <xs:complexType name="PositionenType">
+    <xs:choice>
+      <xs:element name="Leistung" minOccurs="1" maxOccurs="unbounded" type="LeistungType"></xs:element>
+    </xs:choice>
+  </xs:complexType>
+
+  <xs:complexType name="LeistungType">
+    <xs:sequence>
+      <xs:element name="Nummer" type="xs:int"></xs:element>
+      <xs:element name="Art" type="ArtType"></xs:element>
+      <xs:element name="Preis" type="PreisType"></xs:element>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="PreisType">
+    <xs:sequence>
+      <xs:element name="Waehrung" type="xs:string"></xs:element>
+      <xs:element name="Einzel" type="xs:double" minOccurs="0"></xs:element>
+      <xs:element name="Gesamt" type="xs:double"></xs:element>
+      <xs:element name="MwSt" type="xs:double" minOccurs="0"></xs:element>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="ArtType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute name="Menge" type="xs:string" use="required"></xs:attribute>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+
+  <xs:complexType name="EntgeltType">
+    <xs:sequence>
+      <xs:element name="Waehrung" type="xs:string"></xs:element>
+      <xs:element name="Brutto" type="xs:double"></xs:element>
+      <xs:element name="Netto" type="xs:double"></xs:element>
+      <xs:element name="MwSt" type="xs:double"></xs:element>
+    </xs:sequence>
+  </xs:complexType>
 </xs:schema>

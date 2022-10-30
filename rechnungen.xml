@@ -2,7 +2,8 @@
 <Rechnungen
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xmlns="rechnungen"
-	xsi:schemaLocation="rechnungen rechnungen.xsd">
+	xsi:schemaLocation="rechnungen rechnungen.xsd"
+	>
 	<Rechnung>
 		<Leistungsempfaenger>
 			<Name>Kleintier Meier GmbH</Name>
@@ -16,7 +17,7 @@
 			</Anschrift>
 		</Leistungsempfaenger>
 		<Steuernummer>88 123/8282 2</Steuernummer>
-		<Austellungsdatum>2017-1-15</Austellungsdatum>
+		<Austellungsdatum>2017-01-15</Austellungsdatum>
 		<Rechnungsnummer>657321</Rechnungsnummer>
 		<Positionen>
 			<Leistung>
@@ -71,7 +72,7 @@
 			</Anschrift>
 		</Leistungsempfaenger>
 		<Steuernummer>DE333666999</Steuernummer>
-		<Austellungsdatum>2017-8-8</Austellungsdatum>
+		<Austellungsdatum>2017-08-08</Austellungsdatum>
 		<Rechnungsnummer>98-798-7987</Rechnungsnummer>
 		<Positionen>
 			<Leistung>
@@ -110,7 +111,6 @@
 				<Art Menge="">Beratung pauschal</Art>
 				<Preis>
 					<Waehrung>Euro</Waehrung>
-					<Einzel></Einzel>
 					<Gesamt>50</Gesamt>
 					<MwSt>19</MwSt>
 				</Preis>
@@ -176,15 +176,15 @@
 		</Positionen>
 		<Entgelt>
 			<Waehrung>Euro</Waehrung>
-			<Netto>878.49</Netto>
 			<Brutto>738.23</Brutto>
+			<Netto>878.49</Netto>
 			<MwSt>140.26</MwSt>
 		</Entgelt>
 		<Zahlungsmoeglichkeiten>
-			<IBAN></IBAN>
-			<BIC></BIC>
-			<Kontonr></Kontonr>
-			<Bitcoin></Bitcoin>
+			<IBAN>DE166605010101007889911</IBAN>
+			<BIC>UBSWCHZH80H</BIC>
+			<Kontonr>75847683</Kontonr>
+			<Bitcoin>1P82rBiJHDFSav2QrKx1bvdDRVh5QnGkkZ</Bitcoin>
 		</Zahlungsmoeglichkeiten>
 	</Rechnung>
 </Rechnungen>

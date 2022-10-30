@@ -1,3 +1,6 @@
 .settings
 mnrechner.js
 .project
+
+.DS_Store
+.classpath

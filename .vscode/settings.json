@@ -1,0 +1,8 @@
+{
+  "xml.fileAssociations": [
+    {
+      "pattern": "**/rechnungen.xml",
+      "systemId": "rechnungen.xsd"
+    }
+  ]
+}
