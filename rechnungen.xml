@@ -67,6 +67,7 @@
 		<Zahlungsmoeglichkeiten>
 			<BLZ>66050101</BLZ>
 			<Kontonr>987654321</Kontonr>
+			<Institut>Sparkasse Karlsruhe</Institut>
 		</Zahlungsmoeglichkeiten>
 	</Rechnung>
 	<Rechnung>
@@ -81,6 +82,9 @@
 		</Leistungsempfaenger>
 		<Leistungserbringer>
 			<Name>Rochade-La Hoff Pharma GmbH</Name>
+			<Anschrift>
+				<Telefon>07624/666333999</Telefon>
+			</Anschrift>
 		</Leistungserbringer>
 		<Steuernummer>DE333666999</Steuernummer>
 		<Austellungsdatum>2017-08-08</Austellungsdatum>
@@ -136,6 +140,7 @@
 		<Zahlungsmoeglichkeiten>
 			<IBAN>DE1868370034099966633</IBAN>
 			<BIC>DEUTDE6F683</BIC>
+			<Institut>Deutsche Bank Loerrach</Institut>
 		</Zahlungsmoeglichkeiten>
 	</Rechnung>
 	<Rechnung>
@@ -150,6 +155,9 @@
 		</Leistungsempfaenger>
 		<Leistungserbringer>
 			<Name>Bestattungen Unterberg</Name>
+			<Anschrift>
+				<Telefon>0478/777555</Telefon>
+			</Anschrift>
 		</Leistungserbringer>
 		<Steuernummer>DE987654321</Steuernummer>
 		<Austellungsdatum>2017-10-19</Austellungsdatum>
@@ -200,6 +208,7 @@
 			<BIC>UBSWCHZH80H</BIC>
 			<Kontonr>75847683</Kontonr>
 			<Bitcoin>1P82rBiJHDFSav2QrKx1bvdDRVh5QnGkkZ</Bitcoin>
+			<Institut>UBS Zuerich</Institut>
 		</Zahlungsmoeglichkeiten>
 	</Rechnung>
 	<Rechnung>
@@ -245,6 +254,7 @@
 		<Zahlungsmoeglichkeiten>
 			<BIC>370 601 93</BIC>
 			<Kontonr>80200601</Kontonr>
+			<Institut>Pax-Bank Koeln</Institut>
 		</Zahlungsmoeglichkeiten>
 	</Rechnung>
 </Rechnungen>

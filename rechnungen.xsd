@@ -47,14 +47,15 @@
 			<xs:element name="Kontonr" type="xs:string" minOccurs="0"></xs:element>
 			<xs:element name="Bitcoin" type="xs:string" minOccurs="0"></xs:element>
 			<xs:element name="BLZ" type="xs:string" minOccurs="0"></xs:element>
+			<xs:element name="Institut" type="xs:string" minOccurs="0"></xs:element>
 		</xs:all>
 	</xs:complexType>
 
 	<xs:complexType name="AnschriftType">
 		<xs:sequence>
-			<xs:element name="Strasse" type="xs:string"></xs:element>
-			<xs:element name="PLZ" type="xs:string"></xs:element>
-			<xs:element name="Ort" type="xs:string"></xs:element>
+			<xs:element name="Strasse" type="xs:string" minOccurs="0"></xs:element>
+			<xs:element name="PLZ" type="xs:string" minOccurs="0"></xs:element>
+			<xs:element name="Ort" type="xs:string" minOccurs="0"></xs:element>
 			<xs:element name="Telefon" type="NummerType" minOccurs="0"></xs:element>
 			<xs:element name="Fax" type="NummerType" minOccurs="0"></xs:element>
 			<xs:element name="Email" type="xs:string" minOccurs="0"></xs:element>

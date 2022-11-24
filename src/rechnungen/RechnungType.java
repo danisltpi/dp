@@ -26,6 +26,7 @@ import jakarta.xml.bind.annotation.XmlType;
  *     <restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
  *       <sequence>
  *         <element name="Leistungsempfaenger" type="{rechnungen}LeistungsempfaengerType"/>
+ *         <element name="Leistungserbringer" type="{rechnungen}LeistungserbringerType"/>
  *         <element name="Steuernummer" type="{http://www.w3.org/2001/XMLSchema}string"/>
  *         <element name="Austellungsdatum" type="{http://www.w3.org/2001/XMLSchema}date"/>
  *         <element name="Rechnungsnummer" type="{http://www.w3.org/2001/XMLSchema}string"/>
@@ -43,6 +44,7 @@ import jakarta.xml.bind.annotation.XmlType;
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "RechnungType", propOrder = {
     "leistungsempfaenger",
+    "leistungserbringer",
     "steuernummer",
     "austellungsdatum",
     "rechnungsnummer",
@@ -54,6 +56,8 @@ public class RechnungType {
 
     @XmlElement(name = "Leistungsempfaenger", required = true)
     protected LeistungsempfaengerType leistungsempfaenger;
+    @XmlElement(name = "Leistungserbringer", required = true)
+    protected LeistungserbringerType leistungserbringer;
     @XmlElement(name = "Steuernummer", required = true)
     protected String steuernummer;
     @XmlElement(name = "Austellungsdatum", required = true)
@@ -90,6 +94,30 @@ public class RechnungType {
      */
     public void setLeistungsempfaenger(LeistungsempfaengerType value) {
         this.leistungsempfaenger = value;
+    }
+
+    /**
+     * Gets the value of the leistungserbringer property.
+     * 
+     * @return
+     *     possible object is
+     *     {@link LeistungserbringerType }
+     *     
+     */
+    public LeistungserbringerType getLeistungserbringer() {
+        return leistungserbringer;
+    }
+
+    /**
+     * Sets the value of the leistungserbringer property.
+     * 
+     * @param value
+     *     allowed object is
+     *     {@link LeistungserbringerType }
+     *     
+     */
+    public void setLeistungserbringer(LeistungserbringerType value) {
+        this.leistungserbringer = value;
     }
 
     /**

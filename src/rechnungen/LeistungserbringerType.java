@@ -14,18 +14,17 @@ import jakarta.xml.bind.annotation.XmlType;
 
 
 /**
- * <p>Java class for LeistungsempfaengerType complex type.
+ * <p>Java class for LeistungserbringerType complex type.
  * 
  * <p>The following schema fragment specifies the expected content contained within this class.
  * 
  * <pre>{@code
- * <complexType name="LeistungsempfaengerType">
+ * <complexType name="LeistungserbringerType">
  *   <complexContent>
  *     <restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
  *       <sequence>
- *         <element name="Anrede" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
  *         <element name="Name" type="{http://www.w3.org/2001/XMLSchema}string"/>
- *         <element name="Anschrift" type="{rechnungen}AnschriftType"/>
+ *         <element name="Anschrift" type="{rechnungen}AnschriftType" minOccurs="0"/>
  *       </sequence>
  *     </restriction>
  *   </complexContent>
@@ -35,43 +34,16 @@ import jakarta.xml.bind.annotation.XmlType;
  * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(name = "LeistungsempfaengerType", propOrder = {
-    "anrede",
+@XmlType(name = "LeistungserbringerType", propOrder = {
     "name",
     "anschrift"
 })
-public class LeistungsempfaengerType {
+public class LeistungserbringerType {
 
-    @XmlElement(name = "Anrede")
-    protected String anrede;
     @XmlElement(name = "Name", required = true)
     protected String name;
-    @XmlElement(name = "Anschrift", required = true)
+    @XmlElement(name = "Anschrift")
     protected AnschriftType anschrift;
-
-    /**
-     * Gets the value of the anrede property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
-     */
-    public String getAnrede() {
-        return anrede;
-    }
-
-    /**
-     * Sets the value of the anrede property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
-     */
-    public void setAnrede(String value) {
-        this.anrede = value;
-    }
 
     /**
      * Gets the value of the name property.

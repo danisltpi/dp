@@ -23,9 +23,9 @@ import jakarta.xml.bind.annotation.XmlType;
  *   <complexContent>
  *     <restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
  *       <sequence>
- *         <element name="Strasse" type="{http://www.w3.org/2001/XMLSchema}string"/>
- *         <element name="PLZ" type="{http://www.w3.org/2001/XMLSchema}string"/>
- *         <element name="Ort" type="{http://www.w3.org/2001/XMLSchema}string"/>
+ *         <element name="Strasse" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
+ *         <element name="PLZ" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
+ *         <element name="Ort" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
  *         <element name="Telefon" type="{rechnungen}NummerType" minOccurs="0"/>
  *         <element name="Fax" type="{rechnungen}NummerType" minOccurs="0"/>
  *         <element name="Email" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
@@ -48,11 +48,11 @@ import jakarta.xml.bind.annotation.XmlType;
 })
 public class AnschriftType {
 
-    @XmlElement(name = "Strasse", required = true)
+    @XmlElement(name = "Strasse")
     protected String strasse;
-    @XmlElement(name = "PLZ", required = true)
+    @XmlElement(name = "PLZ")
     protected String plz;
-    @XmlElement(name = "Ort", required = true)
+    @XmlElement(name = "Ort")
     protected String ort;
     @XmlElement(name = "Telefon")
     protected String telefon;

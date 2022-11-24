@@ -66,6 +66,16 @@ public class ObjectFactory {
     }
 
     /**
+     * Create an instance of {@link LeistungserbringerType }
+     * 
+     * @return
+     *     the new instance of {@link LeistungserbringerType }
+     */
+    public LeistungserbringerType createLeistungserbringerType() {
+        return new LeistungserbringerType();
+    }
+
+    /**
      * Create an instance of {@link ZahlungsmoeglichkeitenType }
      * 
      * @return

@@ -28,6 +28,7 @@ import jakarta.xml.bind.annotation.XmlType;
  *         <element name="Kontonr" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
  *         <element name="Bitcoin" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
  *         <element name="BLZ" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
+ *         <element name="Institut" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
  *       </all>
  *     </restriction>
  *   </complexContent>
@@ -52,6 +53,8 @@ public class ZahlungsmoeglichkeitenType {
     protected String bitcoin;
     @XmlElement(name = "BLZ")
     protected String blz;
+    @XmlElement(name = "Institut")
+    protected String institut;
 
     /**
      * Gets the value of the iban property.
@@ -171,6 +174,30 @@ public class ZahlungsmoeglichkeitenType {
      */
     public void setBLZ(String value) {
         this.blz = value;
+    }
+
+    /**
+     * Gets the value of the institut property.
+     * 
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
+     */
+    public String getInstitut() {
+        return institut;
+    }
+
+    /**
+     * Sets the value of the institut property.
+     * 
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
+     */
+    public void setInstitut(String value) {
+        this.institut = value;
     }
 
 }
