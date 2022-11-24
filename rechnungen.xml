@@ -4,6 +4,15 @@
 	xmlns="rechnungen" xsi:schemaLocation="rechnungen rechnungen.xsd">
 	<Rechnung>
 		<Leistungsempfaenger>
+			<Anrede>Frau</Anrede>
+			<Name>Sybille Sonder-Suttelrau</Name>
+			<Anschrift>
+				<Strasse>Am Suettelbach 17</Strasse>
+				<PLZ>77070</PLZ>
+				<Ort>Siedelsuderstadt</Ort>
+			</Anschrift>
+		</Leistungsempfaenger>
+		<Leistungserbringer>
 			<Name>Kleintier Meier GmbH</Name>
 			<Anschrift>
 				<Strasse>Meierring 3</Strasse>
@@ -13,7 +22,7 @@
 				<Fax>0777/987987</Fax>
 				<Email>klein.meier@tiere.de</Email>
 			</Anschrift>
-		</Leistungsempfaenger>
+		</Leistungserbringer>
 		<Steuernummer>88 123/8282 2</Steuernummer>
 		<Austellungsdatum>2017-01-15</Austellungsdatum>
 		<Rechnungsnummer>657321</Rechnungsnummer>
@@ -62,13 +71,17 @@
 	</Rechnung>
 	<Rechnung>
 		<Leistungsempfaenger>
-			<Name>Dr. med. Cyprian Zottel</Name>
+			<Anrede>Dr. med.</Anrede>
+			<Name>Cyprian Zottel</Name>
 			<Anschrift>
 				<Strasse>Soddelstrudel 5a</Strasse>
 				<PLZ>13023</PLZ>
 				<Ort>Zotenheim</Ort>
 			</Anschrift>
 		</Leistungsempfaenger>
+		<Leistungserbringer>
+			<Name>Rochade-La Hoff Pharma GmbH</Name>
+		</Leistungserbringer>
 		<Steuernummer>DE333666999</Steuernummer>
 		<Austellungsdatum>2017-08-08</Austellungsdatum>
 		<Rechnungsnummer>98-798-7987</Rechnungsnummer>
@@ -127,13 +140,17 @@
 	</Rechnung>
 	<Rechnung>
 		<Leistungsempfaenger>
-			<Name>Familie Urmel</Name>
+			<Anrede>Familie</Anrede>
+			<Name>Urmel</Name>
 			<Anschrift>
 				<Strasse>Ulturenstrasse 764</Strasse>
 				<PLZ>43210</PLZ>
 				<Ort>Ultursingen</Ort>
 			</Anschrift>
 		</Leistungsempfaenger>
+		<Leistungserbringer>
+			<Name>Bestattungen Unterberg</Name>
+		</Leistungserbringer>
 		<Steuernummer>DE987654321</Steuernummer>
 		<Austellungsdatum>2017-10-19</Austellungsdatum>
 		<Rechnungsnummer>89321311</Rechnungsnummer>
@@ -187,13 +204,17 @@
 	</Rechnung>
 	<Rechnung>
 		<Leistungsempfaenger>
-			<Name>Seine Exzellenz der Hochwuerdigste Herr Erzbischof Waldus Mikksa</Name>
+			<Anrede>Seine Exzellenz der Hochwuerdigste Herr Erzbischof</Anrede>
+			<Name>Waldus Mikksa</Name>
 			<Anschrift>
 				<Strasse>Fronhof 4</Strasse>
 				<PLZ>86152</PLZ>
 				<Ort>Augsburg</Ort>
 			</Anschrift>
 		</Leistungsempfaenger>
+		<Leistungserbringer>
+			<Name>Weinhandel von Langres</Name>
+		</Leistungserbringer>
 		<Steuernummer>DE123456789</Steuernummer>
 		<Austellungsdatum>2009-11-07</Austellungsdatum>
 		<Rechnungsnummer>611-555-32</Rechnungsnummer>

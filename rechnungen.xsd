@@ -13,6 +13,8 @@
 		<xs:sequence>
 			<xs:element name="Leistungsempfaenger"
 				type="LeistungsempfaengerType"></xs:element>
+			<xs:element name="Leistungserbringer"
+				type="LeistungserbringerType"></xs:element>
 			<xs:element name="Steuernummer" type="xs:string"></xs:element>
 			<xs:element name="Austellungsdatum" type="xs:date"></xs:element>
 			<xs:element name="Rechnungsnummer" type="xs:string"></xs:element>
@@ -25,8 +27,16 @@
 
 	<xs:complexType name="LeistungsempfaengerType">
 		<xs:sequence>
+			<xs:element name="Anrede" type="xs:string" minOccurs="0"></xs:element>
 			<xs:element name="Name" type="xs:string"></xs:element>
 			<xs:element name="Anschrift" type="AnschriftType"></xs:element>
+		</xs:sequence>
+	</xs:complexType>
+
+	<xs:complexType name="LeistungserbringerType">
+		<xs:sequence>
+			<xs:element name="Name" type="xs:string"></xs:element>
+			<xs:element name="Anschrift" type="AnschriftType" minOccurs="0"></xs:element>
 		</xs:sequence>
 	</xs:complexType>
 
