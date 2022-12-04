@@ -15,13 +15,13 @@
 				type="LeistungsempfaengerType"></xs:element>
 			<xs:element name="Leistungserbringer"
 				type="LeistungserbringerType"></xs:element>
-			<xs:element name="Steuernummer" type="xs:string"></xs:element>
+			<xs:element name="Steuernummer" type="xs:string" minOccurs="0"></xs:element>
 			<xs:element name="Austellungsdatum" type="xs:date"></xs:element>
 			<xs:element name="Rechnungsnummer" type="xs:string"></xs:element>
 			<xs:element name="Positionen" type="PositionenType"></xs:element>
 			<xs:element name="Entgelt" type="EntgeltType"></xs:element>
 			<xs:element name="Zahlungsmoeglichkeiten"
-				type="ZahlungsmoeglichkeitenType"></xs:element>
+				type="ZahlungsmoeglichkeitenType" minOccurs="0"></xs:element>
 		</xs:sequence>
 	</xs:complexType>
 
@@ -104,9 +104,9 @@
 	<xs:complexType name="EntgeltType">
 		<xs:sequence>
 			<xs:element name="Waehrung" type="xs:string"></xs:element>
-			<xs:element name="Brutto" type="xs:double"></xs:element>
+			<xs:element name="Brutto" type="xs:double" minOccurs="0"></xs:element>
 			<xs:element name="Netto" type="xs:double"></xs:element>
-			<xs:element name="MwSt" type="xs:double"></xs:element>
+			<xs:element name="MwSt" type="xs:double" minOccurs="0"></xs:element>
 		</xs:sequence>
 	</xs:complexType>
 </xs:schema>
