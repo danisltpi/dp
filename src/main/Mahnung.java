@@ -27,7 +27,7 @@ public class Mahnung {
     String zahlungsart1 = getZahlungsart(rechnung);
 
     AnschriftType erbringerAnschrift = rechnung.getLeistungserbringer().getAnschrift();
-    String telefon = "";
+    String telefon = null;
     if (erbringerAnschrift != null) {
       telefon = erbringerAnschrift.getTelefon();
     }
