@@ -1,0 +1,18 @@
+/Rechnungen/Rechnung[3]/Zahlungsmoeglichkeiten/*[1]
+
+//Name[boolean(../Anschrift/Telefon)]
+
+/Rechnungen/Rechnung/Leistungserbringer/Anschrift[starts-with(./PLZ, "7")]
+
+/Rechnungen/Rechnung/Positionen/Leistung[number(./Preis/Einzel) < 100.00]
+
+/Rechnungen/Rechnung/Rechnungsnummer[count(../Positionen/Leistung) > 3]
+
+/Rechnungen/Rechnung[sum(./Positionen/Leistung/Preis/Gesamt) != number(./Entgelt/Brutto)]
+
+/Rechnungen/Rechnung[(contains(./Leistungsempfaenger/Anrede, "Frau") or contains(./Leistungsempfaenger/Anrede, "Herr"))]
+
+/Rechnungen/Rechnung[number(./Entgelt/Brutto) > 1000.00]
+
+/Rechnungen/Rechnung[(number(./Entgelt/Brutto))  >  ( (sum(/rechnungen/rechnung/Entgelt/Brutto)) / (count(/Rechnungen/Rechnung)))]
+
