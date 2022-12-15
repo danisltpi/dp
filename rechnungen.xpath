@@ -15,4 +15,3 @@
 /Rechnungen/Rechnung[number(./Entgelt/Brutto) > 1000.00]
 
 /Rechnungen/Rechnung[(number(./Entgelt/Brutto))  >  ( (sum(/rechnungen/rechnung/Entgelt/Brutto)) / (count(/Rechnungen/Rechnung)))]
-
