@@ -298,4 +298,47 @@
 			<Netto>3589.99</Netto>
 		</Entgelt>
 	</Rechnung>
+	<Rechnung>
+		<Leistungsempfaenger>
+			<Anrede>Herr</Anrede>
+			<Name>Mueller-Luedenscheid</Name>
+			<Anschrift>
+				<Strasse>Badstrasse 3</Strasse>
+				<PLZ>17777</PLZ>
+				<Ort>Dammhausen</Ort>
+			</Anschrift>
+		</Leistungsempfaenger>
+		<Leistungserbringer>
+			<Name>Kloepner Sanitaereinrichtungen</Name>
+			<Strasse>Zur Wasserkuppe 99</Strasse>
+			<PLZ>43354</PLZ>
+			<Ort>Bischhofsborn </Ort>
+		</Leistungserbringer>
+		<Steuernummer>DE1122334499</Steuernummer>
+		<Rechnungsnummer>47-11</Rechnungsnummer>
+		<Austellungsdatum>2016-12-31</Austellungsdatum>
+		<Positionen>
+			<Leistung>
+				<Nummer>1</Nummer>
+				<Art Menge="1">Gummiente "Quietsch"</Art>
+				<Preis>
+					<Waehrung>Euro</Waehrung>
+					<Einzel>19.99</Einzel>
+					<Gesamt>19.99</Gesamt>
+					<MwSt>19</MwSt>
+				</Preis>
+			</Leistung>
+		</Positionen>
+		<Entgelt>
+			<Waehrung>Euro</Waehrung>
+			<Brutto>19.99</Brutto>
+			<Netto>16.80</Netto>
+			<MwSt>3.19</MwSt>
+		</Entgelt>
+		<Zahlungsmoeglichkeiten>
+			<Institut>Adelsbank Bischhofsborn</Institut>
+			<BLZ>777 55 11</BLZ>
+			<Kontonr>80870733</Kontonr>
+		</Zahlungsmoeglichkeiten>
+	</Rechnung>
 </Rechnungen>
